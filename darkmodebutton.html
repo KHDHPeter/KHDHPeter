@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jc</title>
+<script>
+function toggle(){
+let element = document.body;
+
+element.classList.toggle("dm");
+document.getElementById("button").classList.toggle("d");
+document.getElementById("text").innerHTML = "gefunden xD";
+}
+</script>
+<style>
+body {
+color: black;
+background-color: white;
+}
+.dm {
+color: white;
+background: black;
+}
+button {
+color: white;
+background: black;
+}
+.d{
+color: black;
+background-color: white;
+}
+</style>
+</head>
+<body>
+<button id="button" onclick="toggle()"> Dark Mode/Light Mode</button>
+<h1 id="text">Der Button ist oben.</h1>
+</body>
+</html>
